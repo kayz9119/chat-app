@@ -2,7 +2,9 @@
 Bu uygulama **node.JS** üzerinden *express* ve *socket.io* kullanılarak yapılmıştır.
 ## Kurulumu
 Basit bir kurulumu var, aynen şöyle:
-> npm install express --save
+```bash
+npm install express --save
+```
 
 Bu komut express'i kuruyor.
 > npm install socket.io --save
