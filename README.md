@@ -11,6 +11,7 @@ Bu komut socket.io'yu kuruyor
 
 ## Çalıştırma
 >node index.js
+
 Komutuyla direkt olarak çalıştırabilirsiniz.
 
 Created by [**Kayz9119**](http://kerem.plutonbilisim.online)
