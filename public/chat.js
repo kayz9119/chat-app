@@ -6,7 +6,7 @@ const submitBtn = document.getElementById('submitBtn')
 const output = document.getElementById('output')
 const feedback = document.getElementById('feedback')
 
-submitBtn.addEventListener('click touchstart', () => {
+submitBtn.addEventListener('click', () => {
     socket.emit('chat', {
         message: message.value,
         sender: sender.value,
