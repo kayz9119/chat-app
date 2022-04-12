@@ -1,4 +1,4 @@
-const socket = io.connect('192.168.1.100:3000')
+const socket = io.connect('https://chat-server-kayz.herokuapp.com/')
 
 const sender = document.getElementById('sender')
 const message = document.getElementById('message')
