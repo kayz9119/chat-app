@@ -26,6 +26,12 @@ body #chat-wrap {
 body #chat-window {
   height: 400px;
   overflow-y: auto;
+  position: relative;
+}
+body #chat-window #autoscroll {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 body #output p {
   font-size: 15px;

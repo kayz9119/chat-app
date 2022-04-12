@@ -24,6 +24,12 @@ body {
     #chat-window {
         height: 400px;
         overflow-y: auto;
+        position: relative;
+        #autoscroll {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
     }
     #output {
         p {
