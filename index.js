@@ -4,7 +4,7 @@ const socket = require("socket.io")
 const app = express()
 
 const server = app.listen(process.env.PORT||3000, () => {
-    console.log("localhost:3000")
+    console.log(Request.UserHostAddress);
 })
 app.use(express.static('public'))
 const io = socket(server)
