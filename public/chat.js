@@ -53,15 +53,15 @@ socket.on('typing', data => {
     feedback.innerHTML = `<p>${data} is typing...</p>`
 });
 
-
-autoscroll.addEventListener('change', function(e) {
-    if(autoscroll.checked == true){
-        pageScroll();
-    }else{
-        console.log(autoscroll.checked)
-    }
-});
-function pageScroll() {
-    chat_win.scrollBy(0, 5);
-    scrolldelay = setTimeout(pageScroll, 10);
-}
+var chat_window_scroll_interval;
+document.getElementById( "autoscroll_chbx" ).addEventListener( "change", function() {
+  // this == checkbox
+  if ( this.checked ) {
+    // scroll every 1 second by 40px vertically
+    chat_window_scroll_interval = setInterval( function() {
+       document.getElementById( "chat-window" ).scrollBy( 0, 10 );
+    }, 10 );
+  } else {
+    clearInterval( chat_window_scroll_interval );
+  }
+} );
