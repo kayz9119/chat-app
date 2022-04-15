@@ -22,15 +22,3 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('typing', data)
     })
 })
-async function fetching(){
-    sockets = await io.fetchSockets();
-    return sockets;
-}
-async function fetchByRoom(roomName){
-    sockets = await io.in(roomName).fetchSockets();
-    return sockets;
-}
-async function fetchBySocketID(socketID){
-    sockets = await io.in(socketID).fetchSockets();
-    return sockets;
-}
